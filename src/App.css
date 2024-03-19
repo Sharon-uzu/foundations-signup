@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Lato:wght@300&family=Playfair+Display:ital@0;1&family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100%;
+  background-color: #e4f4ff;
+  background-color: #f8f9fa ;
+  font-family: 'Edu SA Beginner', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #4d7fff #ddd;
+}
+/* APPLICATION FORM STARTS HERE */
+.application{
+  width: 100%;
+  display: flex;
+}
+
+.application .form-text{
+  width: 45%;
+  /* background: #F1C7381A; */
+  position: relative;
+  /* height: 100vh; */
+  text-align: center;
+  background-image: url(Images/w1.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+
+.application .form-text .pix1{
+  position: absolute;
+  /* background-color: hsla(0, 0%, 0%, .3); */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+}
+.application .form-text .pix1 img{
+  width: 70%;
+  /* height: 100%; */
+  height: 55vh;
+  margin-top: 10px;
+}
+
+.application .formHolder{
+  background-color: #fff;
+  width: 55%;
+  padding: 30px 30px 0 30px;
+  text-align: center;
+}
+
+.application .formHolder h4{
+  font-size: 24px;
+  font-weight: 600;
+  /* line-height: 36px; */
+  margin-bottom: 15px;
+  text-align: left;
+
+}
+
+.application .formHolder p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000B2;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.application .formHolder .form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.application .formHolder .form label{
+  width: 45%;
+  margin-bottom: 15px;
+}
+.application .formHolder .form label p{
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+.application .formHolder .form label input{
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #0000004D;
+  padding-left: 10px;
+}
+
+input[type="date"] {
+  padding: 5px;
+  font-size: 13px;
+  color: #5e5e5e;
+  border-radius: 4px;
+}
+
+
+.application .formHolder .form label input::placeholder{
+  font-size: 12px;
+}
+
+.application .formHolder .form label select{
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #0000004D;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+.application .formHolder .form .txt{
+  width: 100%;
+}
+.application .formHolder .form label textarea{
+  width: 100%;
+  height: 155px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #0000004D;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #5e5e5e;
+}
+
+
+
+.application .submit{
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.application .submit button{
+  width: 100%;
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background: #000;
+  margin-bottom: 30px;
+}
+
+/* APPLICATION FORM ENDS HERE */
+
+
+/* CONGRAT STARTS HERE */
+.congrat{
+  background-color: #fff;
+  padding-top: 40px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.congrat h3{
+  width: 70%;
+  /* margin: auto; */
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+}
+
+.congrat img{
+  width: 40%;
+  object-fit: contain;
+  margin: 0;
+}
+
+.congrat p{
+  width: 60%;
+  margin: auto;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.congrat span{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.congrat span .c-i{
+  font-size: 26px;
+  color: #000;
+}
+.congrat span .c-i:hover{
+  color: blue;
+}
+
+.congrat button{
+  padding: 5px 25px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 50px;
+  background: #DEA729;
+}
+
+/* CONGRATS END HERE */
+
+.confirm{
+  text-align: center;
+  padding: 30px 20px;
+}
+
+
+@media screen and (max-width: 850px) {
+  .application{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .application .form-text{
+    width: 80%;
+    height: 45vh;
+    background-image: url(Images/w2.jpeg);
+    background-size: cover;
+
+  }
+  .application .formHolder{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .application .form-text{
+    width: 90%;
+  }
+  .application .formHolder{
+    width: 90%;
+  }
+  .congrat h3{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .application .formHolder .form label{
+    width: 100%;
+  }
+  .congrat h3{
+    font-size: 19px;
+  }
+  .congrat span{
+    width: 60%;
+  }
+}
